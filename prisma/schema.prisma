@@ -1,0 +1,23 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id Int @id @default(autoincrement())
+  code Int @unique
+  type Type
+  name String
+  price Int
+
+  @@map("products")
+}
+
+enum Type {
+  Makanan
+  Minuman
+}
