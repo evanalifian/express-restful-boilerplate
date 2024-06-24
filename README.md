@@ -26,7 +26,7 @@ I make this bolerplate to make RESTful API using [Express.js](https://expressjs.
 To work with this boilerplate, you clone this project and then install all depedencies.
 
 ```
-git clone https://github.com/evanalifian/express-restful-boilerplate.git
+git clone https://github.com/evanalifian/express-restful-boilerplate.git <opt: project name>
 npm install
 ```
 
@@ -45,7 +45,7 @@ root-folder
 |   |    |__ error-middleware.js
 |   |    |__ not-found-middleware.js
 |   |-- routes
-|   |    |__ api-routes.js
+|   |    |__ products-routes.js
 |   |-- services
 |   |    |__ products-service.js
 |   |-- app.js
