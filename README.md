@@ -1,13 +1,11 @@
 # Express RESTful API Boilerplate
 
----
 
 I make this bolerplate to make RESTful API using [Express.js](https://expressjs.com/). This project includes all i need to make API:
 
 
 ## Depedencies
 
----
 
 - **Express**: A Node.js framework.
 - **Prisma**: Popular Node.js ORM.
@@ -17,7 +15,6 @@ I make this bolerplate to make RESTful API using [Express.js](https://expressjs.
 
 ## devDepedencies
 
----
 
 - **cross-env**: To run scripts that set and use environment variables across platforms.
 - **nodemon**: Simple monitor script for use during development of a Node.js app.
@@ -25,7 +22,6 @@ I make this bolerplate to make RESTful API using [Express.js](https://expressjs.
 
 ## Getting Started
 
----
 
 To work with this boilerplate, you clone this project and then install all depedencies.
 
@@ -37,7 +33,6 @@ npm install
 
 ## Folder Structure
 
----
 
 ```
 root-folder
