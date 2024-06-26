@@ -1,7 +1,18 @@
+import ResponseError from "../utils/response-error.js";
+
 export const errorMiddleware = (err, req, res, next) => {
-  console.error(err.stack)
-  res.status(500).json({
-    status: 500,
-    message: 'There is something wrong on the server'
-  })
+  if (!err) {
+    next();
+    return;
+  }
+
+  if (err instanceof ResponseError) {
+    res.status(err.status).json({
+        errors: err.message
+    }).end();
+  }  else {
+    res.status(500).json({
+        errors: err.message
+    }).end();
+  }
 }
