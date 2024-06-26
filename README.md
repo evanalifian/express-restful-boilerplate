@@ -48,6 +48,8 @@ root-folder
 |   |    |__ products-routes.js
 |   |-- services
 |   |    |__ products-service.js
+|   |-- utils
+|   |    |__ response-error.js
 |   |-- app.js
 |   |-- database.js
 |   |-- index.js
@@ -67,7 +69,8 @@ root-folder
   - controllers/: A place to store controller logic that handles requests and responses.
   - routes/: Place to define application routes.
   - middlewares/: Place for custom middleware (if any).
-  - services/: A place for business logic that is not directly related to requests and responses..
+  - services/: A place for business logic that is not directly related to requests and responses.
+  - services/: A place for utilities and helper functions..
   - index.js: The main file that runs the Express server.
   - app.js: Files for setting up and configuring Express app.
 - prisma/: Folder for Prisma configuration.
