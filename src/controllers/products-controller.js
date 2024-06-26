@@ -3,7 +3,9 @@ import productService from "../services/products-service.js"
 const create = async (req, res, next) => {
   try {
     const result = await productService.create(req.body)
-    res.status(200).json({
+    res.status(201).json({
+      status: 201,
+      mesage: 'Product added',
       data: result
     })
   } catch (error) {
@@ -15,6 +17,7 @@ const getAll = async (req, res, next) => {
   try {
     const result = await productService.getAll()
     res.status(200).json({
+      status: 200,
       data: result
     })
   } catch (error) {
@@ -26,6 +29,7 @@ const getById = async (req, res, next) => {
   try {
     const result = await productService.getById(parseInt(req.params.productId))
     res.status(200).json({
+      status: 200,
       data: result
     })
   } catch (error) {
@@ -37,6 +41,7 @@ const update = async (req, res, next) => {
   try {
     const result = await productService.update(req.body)
     res.status(200).json({
+      status: 200,
       data: result
     })
   } catch (error) {
@@ -48,6 +53,7 @@ const remove = async (req, res, next) => {
   try {
     const result = await productService.remove(parseInt(req.params.productId))
     res.status(200).json({
+      status: 200,
       data: result
     })
   } catch (error) {
