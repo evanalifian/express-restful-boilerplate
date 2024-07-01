@@ -50,10 +50,13 @@ root-folder
 |   |    |__ products-service.js
 |   |-- utils
 |   |    |__ response-error.js
+|   |    |__ test-products.js
 |   |-- app.js
 |   |-- database.js
 |   |-- index.js
 |   |-- logger.js
+|-- test
+|   |__ products-route.test.js
 |-- .env
 |-- .env.prod
 |-- .gitignore
@@ -74,6 +77,7 @@ root-folder
   - index.js: The main file that runs the Express server.
   - app.js: Files for setting up and configuring Express app.
 - prisma/: Folder for Prisma configuration.
+- test/: The test folder is a folder for carrying out unit testing
 - .env and .env.prod: Files for storing environment variables according to different environments.
 - .gitignore: File to ignore certain files/folders in git.
 - package.json: Files for defining dependencies and npm scripts.
