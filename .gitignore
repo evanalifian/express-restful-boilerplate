@@ -1,6 +1,9 @@
 # node module
 node_modules
 
+# Code coverage
+coverage
+
 # environment variables
 .env
 .env.prod
